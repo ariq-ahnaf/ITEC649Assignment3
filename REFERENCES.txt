@@ -1,0 +1,10 @@
+# REFERENCES USED
+# https://bottlepy.org/docs/dev/tutorial.html
+# http://pwp.stevecassidy.net/bottle/sessions.html
+# https://www.w3schools.com/python/python_json.asp
+# https://realpython.com/python-json/
+# http://pwp.stevecassidy.net/bottle/forms-processing.html
+# https://pythonschool.net/server-side-scripting/processing-the-form-data/
+# https://www.w3schools.com/python/python_mysql_getstarted.asp
+# https://docs.python.org/3/library/sqlite3.html
+# https://www.programcreek.com/python/example/14949/bottle.HTTPError
