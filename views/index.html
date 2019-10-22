@@ -1,0 +1,20 @@
+% rebase('base.html')
+<!
+    This index page is the homempage of the webapp
+    It is using the base.html file to generate the header and basic skeleton of the view
+    It is modified in accordance with the index.html file provided for Assignment 1
+    mainly to use the CSS file I created
+    >
+<h1>{{title}}</h1>
+
+
+ <div class="productlist">
+     % for item in message:
+     <div class="product">
+         <h2><a href="/product/{{item[0]}}">{{item[1]}}</a></h2>
+         <div class="image"><img src="{{item[4]}}" alt="{{item[1]}} image"></div>
+         <div class="inventory">{{item[6]}} in stock</div>
+         <div class="cost">${{item[5]}}</div>
+     </div>
+     % end
+ </div>

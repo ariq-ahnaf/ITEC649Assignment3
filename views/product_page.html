@@ -1,0 +1,20 @@
+% rebase('base.html')
+<!  The product page will display individual product data like it name, description, price and stock
+    The secondary function is to host the form that updates the customer shopping cart
+    The form updates the number of items ordered and it's product id>
+<h1>{{data[1]}}</h1>
+ <img src="{{data[4]}}">
+<br>
+<br>
+<ul class="pricing">
+    <li>Price: ${{data[5]}}</li>
+    <li>Stock Remaining: {{data[6]}}</li>
+</ul>
+{{!data[2]}}
+
+<form method="POST" action='/cart'>
+    <input type="number" name="quantity" value="0" min="0">
+    <input type="hidden" name="product" value="{{data[0]}}">
+    <input type="submit" value="Add to Cart">
+</form>
+

@@ -1,0 +1,289 @@
+/*
+	CSS created for ITEC 649 Web Technology, S1 2019, Assignement 1
+	Submitted By: Ariq Ahnaf Shaan
+	OneID # 45686769
+
+*/
+h1 {
+	
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 40px;
+	text-align: center;
+	text-decoration-style: dotted;
+}
+
+h2{
+	font-family: 'Shadows Into Light', cursive;
+	font size: 25px;
+	text-align: center;
+	text-decoration-style: dashed;
+}
+
+html {
+    font-family: bebas neue;, sans-serif;
+    font-size: 20px;
+    background-color: #f5fffa;
+}
+body{
+	margin: 35px;
+}
+/*code block for the account-menu.
+Code written with guidance from W3School.
+Link: https://www.w3schools.com/css/css_navbar.asp;
+*/
+.account-menu{
+	width: 95%;
+	list-style: none;
+	text-align: right;
+	margin-top: 0;
+	list-style-type: none;
+}
+.account-menu ul
+{
+	margin: 0;
+	padding:0;
+	overflow: hidden;
+	list-style: none;
+}
+.account-menu li{
+	display: inline-block;
+	margin-left: 10px;
+	padding-top: 0;
+	float: right;
+}
+.account-menu li a{
+	color: red;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px 12px;
+}
+@media screen and (max-width: 600px){
+	ul.account-menu li {
+		float: none;
+		display: block;
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+}
+
+/*code block for the menu.
+Code written with guidance from W3School.
+Link: https://www.w3schools.com/css/css_navbar.asp;
+*/
+.menu{
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+  	background-color: #654;
+}
+.menu li{float: left;}
+.menu li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+.menu li a:hover:not(.active){background-color: #512;}
+.menu li a:hover.active{background-color: #672;}
+.menu li.right{float: right;}
+
+@media screen and (max-width: 600px){
+	.menu li.right,
+	.menu li {float: none;}
+}
+
+.pricing {
+	list-style-type: none;
+}
+
+
+#product-search-form{
+	max-width:1920px;
+	position: relative;
+	display: block;
+	float: left;
+	list-style-type: none;
+	margin: 20px;
+	padding: 10px;
+	padding-top: 25px;
+	text-decoration: none;
+}
+
+
+#promo ul{
+	max-width: 1920px;
+	list-style: none;
+	margin: 10px;
+	padding: 30px;
+	border-radius: 25px;
+	border: 3px solid #5564;
+	background-color: #003366;
+	
+}
+#promo li {
+	display: inline-block;
+	margin-right: 15px;
+	margin-left: 15px;
+	color: white;
+	background-image: url("shipping.png");
+	background-repeat: no-repeat;
+	background-size: 80px;
+
+}
+
+
+#promo li a{
+	display: inline-grid;
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	padding-left: 85px;
+	text-transform: uppercase;
+}
+
+.featured{
+	max-width:100%;
+	margin-bottom: 15px;
+	text-align: center;
+	border: 3px solid #5564;
+	border-radius: 55px;
+	background-image: url("promo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.featured img{
+
+	display: inline;
+	height: auto;
+	max-width: 70%;
+	margin: 20px;
+	object-fit: fill;
+}
+.description{
+	text-align: center;
+	font-size: 25px;
+}
+
+
+#special-offer{
+	max-width: 1920px;
+	color:	rgb(185,145,70);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
+/*code block for the products.
+Code written with guidance from W3School.
+Link: https://www.w3schools.com/css/css3_flexbox.asp
+*/
+.productlist{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+}
+.product{
+	
+	width:350px;
+	margin: 5px;
+	background-color: teal;
+	border: 2px solid #333;
+	border-radius: 55px;
+}
+.product img{
+	display: inline;
+	width: 335px;
+	margin: 5px;
+}
+
+.product a{
+	font-family: trocchi;
+	font-size: 35px;
+	text-align: center;
+	margin: 20px;
+	color: gold;
+	text-decoration: none;
+}
+.inventory{
+	text-align: center;
+}
+.cost{
+	text-align: center;
+}
+.cart{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#promotional-text p{
+	font-family: 'Maven Pro', serif;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none
+}
+#promotional-text a{
+	font-family: 'Maven Pro', serif;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#signupform{
+	float: right;
+}
+
+.social{
+	width: 65%;
+	float: left;
+	margin: 0;
+	
+}
+.social ul{
+	background-image: url("follow.png");
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: left;
+}
+.social li{
+	display: inline-block;
+	padding-left: 60px;
+	position: relative;
+}
+
+.social li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+
+}
+
+footer p{;
+	text-align: right;
+	font-size: 16px;
+}
+
+Information taken from the following websites:
+https://www.w3schools.com/css/default.asp
+https://www.w3schools.com/colors/colors_picker.asp
+
+Image credit to the following:
+https://pixabay.com/illustrations/youtube-youtube-play-button-3363633/
+https://pixabay.com/illustrations/instagram-symbol-logo-photo-camera-1581266/
+https://pixabay.com/photos/facebook-social-media-communication-2815970/
+https://pixabay.com/illustrations/icon-shopping-cart-e-commerce-1728552/
+https://pixabay.com/illustrations/shipping-transport-icon-2856031/
+https://pixabay.com/illustrations/retro-background-starburst-retro-3101430/
+https://pixabay.com/illustrations/ecommerce-background-web-design-3124413/

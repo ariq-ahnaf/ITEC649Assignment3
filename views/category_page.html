@@ -1,0 +1,16 @@
+% rebase('base.html')
+
+<!  The category page displays all the items belonging to a particular category like Men or Women>
+
+<h1>{{title}}</h1>
+
+ <div class="productlist">
+     % for item in data:
+     <div class="product">
+         <h2><a href="/product/{{item[0]}}">{{item[1]}}</a></h2>
+         <div class="image"><img src="{{item[4]}}" alt="{{item[1]}} image"></div>
+         <div class="inventory">{{item[6]}} in stock</div>
+         <div class="cost">${{item[5]}}</div>
+     </div>
+     % end
+ </div>

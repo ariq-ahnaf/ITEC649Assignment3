@@ -1,0 +1,28 @@
+% rebase('base.html')
+<! This is creating a table to be populated with the data from the cart handler
+    User input data like the item and its quantity is used to retrieve the item from
+    the database and use its unit cost to calculate total price>
+
+<table style="border:5px double black;">
+    <thead>
+    <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    %for product in products:
+    <tr>
+        <td><a href ="/product/{{product['id']}}">{{product['name']}}</a></td>
+        <td>{{product['quantity']}}</td>
+        <td>{{product['cost']}}</td>
+    </tr>
+    %end
+    <tr>
+        <td>Total</td>
+        <td></td>
+        <td>{{total}}</td>
+    </tr>
+    </tbody>
+</table>
